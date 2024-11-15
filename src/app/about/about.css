@@ -1,0 +1,10 @@
+.icon-center > * {
+    @apply sm:p-1 md:p-4 rounded-lg border border-gray-300 transition-transform;
+}
+.icon-center > *:hover {
+    @apply scale-110;
+}
+.IconSize{
+    @apply text-6xl sm:text-7xl md:text-8xl;
+}
+  

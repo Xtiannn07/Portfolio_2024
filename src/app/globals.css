@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #ffffff; /* Default light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #000000; /* Dark mode */
+  }
+}
+
+body {
+  @apply text-foreground px-5 sm:px-10 md:px-14;
+  color: var(--foreground); /* Use CSS variable for custom text color */
+}
+.title {
+  @apply font-title; /* Apply the Tiny5 font */
+  font-size: 1.5rem; /* Optional: Set the font size */
+}
+
+h1 {
+  @apply text-[1.5rem];
+}
+h2 {
+  @apply text-[1.25rem];
+}
+h3 {
+  @apply text-[1.125rem];
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #333;
+}
+.btn{
+  @apply transform sm:scale-100 md:scale-[120%] lg:scale-[130%];
+  position: relative;
+  padding: 10px 22px;
+  background: #9CA3AF;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px;
+}
+.btn:active{
+  @apply transform sm:scale-[95%] md:scale-[115%] lg:scale-[125%];
+}
+.btn:hover{
+  @apply hover:text-gray-300 transform sm:scale-[105%] md:scale-[125%] lg:scale-[135%];
+}
+
+.span{
+  @apply  hover:text-gray-300;
+}
+
